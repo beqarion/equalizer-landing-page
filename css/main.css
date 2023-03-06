@@ -181,9 +181,16 @@ Equalizer
 */
 .phone-img {
   position: absolute;
-  width: 55%;
+  height: 70%;
+  width: auto;
   left: 50%;
   transform: translate(-50%, -25%);
+}
+@media screen and (min-width: 400px) {
+  .phone-img {
+    height: auto;
+    width: 55%;
+  }
 }
 .equalizer-section {
   min-height: 600px;
@@ -212,7 +219,50 @@ Equalizer
   transform: translate(-50%, 60%);
   z-index: 2;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
+}
+@media screen and (min-width: 768px) {
+  .equalizer-card {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 4rem;
+    transform: translateY(17%);
+    z-index: 2;
+  }
+  .equalizer-center {
+    background: var(--black) url("../assets/bg-pattern-2.svg") no-repeat top
+      center / 30% auto;
+  }
+  .section-center.equalizer-center {
+    width: 90vw;
+  }
+  .phone-img {
+    position: absolute;
+    height: 95%;
+    width: auto;
+    left: 4rem;
+    transform: translateY(-25%);
+  }
+}
+@media screen and (min-width: 1110px) {
+  .phone-img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 7rem;
+    transform: translateY(-30%);
+  }
+  .equalizer-center {
+    background: var(--black) url("../assets/bg-pattern-2.svg") no-repeat 40% -50% /
+      30% auto;
+  }
+  .equalizer-card {
+    left: auto;
+    right: 6rem;
+  }
 }
 .eq-title {
   font-weight: 700;
