@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <!-- fonts-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
+
 <body>
+  <main class="main">
 
-  We make your music sound extraordinary.
+    <header class="section hero-section">
+      <div class="section-center hero-center">
+        <div class="logo"><img src="./assets/logo.svg" alt="logo"></div>
+        <div class="hero-info">
+          <h1 class="hero-title">We make your music sound extraordinary.</h1>
+          <p class="hero-text">
+            A system audio equalizer specifically designed for Android and iOS. Freely tune the
+            way your music sounds with a professional grade parametric EQ & volume mixer. Control
+            bass, mids, treble, gain control, reverb, and more!
+          </p>
+        </div>
+      </div>
+    </header>
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+    <!-- Equelizer section -->
+    <section class="section equalizer-section">
+      <div class="section-center equalizer-center">
+        <img src="./assets/illustration-app.png" alt="phone picture" class=" img phone-img">
+        <article class="equalizer-card">
+          <h2 class="eq-title">Premium EQ</h2>
+          <p class="eq-text">
+            Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take
+            your listening experience to a whole new level and access all our incredible features!
+          </p>
+          <p class="price-info">
+            <span class="price">$4</span> / month
+          </p>
+          <button class="btn btn-ios"><img src="./assets/icon-apple.svg" alt="apple icon">
+              Download</span></button>
+          <button class="btn btn-android"><img src="./assets/icon-android.svg" alt="android icon">
+              Download</span></button>
+        </article>
+      </div>
+    </section>
 
-  Premium EQ
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
 
-  $4 / month
+    <!-- 
 
-  iOS Download
-  Android Download
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
 
   All rights reserved © Equalizer 2021
   Have any problems? Contact us via social media or email us at equalizer@example.com
-
+ -->
+  </main>
 </body>
+
 </html>

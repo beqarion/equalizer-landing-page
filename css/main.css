@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --teal: #66e2dc;
+  --orange: #fa7453;
+  --yellow: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+
+  /* font */
+  --FF: "IBM Plex Sans", sans-serif;
+
+  --transition: 0.3s ease-in-out all;
+}
+
+/* global styles */
+body {
+  font-family: var(--FF);
+  color: var(--black);
+}
+img:not(".logo img") {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* global styles */
+.section-center {
+  max-width: 1110px;
+  width: 90vw;
+  margin: 0 auto;
+}
+.main {
+  min-height: 100vh;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  font-family: var(--FF);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  border: none;
+
+  display: block;
+  border-radius: 0.75rem;
+  transition: var(--transition);
+  width: 100%;
+  padding: 14px 0;
+}
+.btn-android {
+  color: var(--black);
+  background: var(--white);
+}
+.btn-android:hover {
+  background: var(--yellow);
+}
+.btn-ios {
+  color: var(--white);
+  background: var(--black);
+}
+.btn-ios:hover {
+  background: var(--teal);
+}
+
+/* 
+===============
+Hero
+===============
+*/
+.main {
+  background: url("../assets/bg-main-mobile.png") no-repeat;
+  background-position: right -65px top -104px;
+  background-size: 281px 480px;
+  /* background-color: var(--black); */
+}
+.hero-section {
+  padding: 2.5rem 0 10.375rem;
+}
+.logo img {
+  height: 2rem;
+  display: block;
+}
+.logo {
+  margin-bottom: 4rem;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* or 120% */
+
+  letter-spacing: -0.454545px;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+.hero-text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 26px;
+}
+@media screen and (min-width: 600px) {
+  .main {
+    background: url("../assets/bg-main-tablet.png") left -254px top -112px /
+        983px 808px no-repeat,
+      url("../assets/bg-pattern-1.svg") right -30.67px top -32px / 266.67px
+        400px no-repeat;
+
+    /* background-color: var(--black); */
+  }
+  .hero-section {
+    padding: 3.875rem 0 15.625rem;
+  }
+  .logo {
+    margin-bottom: 6rem;
+  }
+  .hero-info {
+    max-width: 65vw;
+  }
+  .hero-title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727273px;
+  }
+  .hero-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .main {
+    background: url("../assets/bg-main-tablet.png") left -146px top -112px /
+        1613px 1758px no-repeat,
+      url("../assets/bg-pattern-1.svg") right top -40px no-repeat;
+    /* background-color: var(--black); */
+  }
+  .section-center {
+    width: 80vw;
+  }
+  .hero-section {
+    padding: 3.875rem 0 20rem;
+  }
+  .logo {
+    margin-bottom: 8rem;
+  }
+
+  .hero-title {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+
+    max-width: 1015px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 34px;
+
+    max-width: 825px;
+  }
+}
+
+/* 
+===============
+Equalizer
+===============
+*/
+.phone-img {
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.equalizer-section {
+  min-height: 600px;
+  padding-bottom: 24.375rem;
+}
+.equalizer-center {
+  width: 100%;
+  height: 600px;
+  background: var(--black) url("../assets/bg-pattern-2.svg") no-repeat top
+    center / 72.5% auto;
+  border-radius: 12px;
+
+  position: relative;
+}
+
+.equalizer-card {
+  background: var(--orange);
+  padding: 3rem 2.25rem;
+  border-radius: 12px;
+
+  color: var(--white);
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  z-index: 2;
+  width: 100%;
+  max-width: 600px;
+}
+.eq-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  margin: 0;
+  margin-bottom: 12px;
+}
+.eq-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  margin: 0;
+  margin-bottom: 2.25rem;
+}
+.price-info {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+.price-info span {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+}
+
+.btn-ios {
+  margin-bottom: 1rem;
+}
