@@ -299,3 +299,30 @@ Equalizer
 .btn-ios {
   margin-bottom: 1rem;
 }
+
+/* 
+===============
+Footer
+===============
+*/
+.footer-section {
+  padding-bottom: 5rem;
+}
+.footer-section .logo {
+  margin-bottom: 2rem;
+}
+
+.footer-texts {
+}
+.copyright-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  max-width: 365px;
+}
+.copyright-text span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
