@@ -222,6 +222,9 @@ Equalizer
   max-width: 400px;
 }
 @media screen and (min-width: 768px) {
+  .equalizer-section {
+    padding-bottom: 10.875rem;
+  }
   .equalizer-card {
     width: 100%;
     max-width: 400px;
@@ -248,6 +251,9 @@ Equalizer
   }
 }
 @media screen and (min-width: 1110px) {
+  .equalizer-section {
+    padding-bottom: 12.625rem;
+  }
   .phone-img {
     position: absolute;
     height: 100%;
@@ -312,17 +318,39 @@ Footer
   margin-bottom: 2rem;
 }
 
-.footer-texts {
-}
 .copyright-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
 
   max-width: 365px;
+  margin-bottom: 4rem;
 }
+
 .copyright-text span {
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright-text {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 8.5rem;
+  }
 }
